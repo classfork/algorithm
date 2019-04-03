@@ -97,7 +97,7 @@ public:
 
     int top(){
         // assert stackVal is not empty
-	long val = stackVal.top();
+	int val = stackVal.top();
 	if (val < 0)  return minVal;
         return val + minVal;
     }
@@ -106,8 +106,8 @@ public:
         return minVal;
     }
 private:
-    long minVal;
-    stack<long> stackVal;
+    int minVal;
+    stack<int> stackVal;
 };
 
 
