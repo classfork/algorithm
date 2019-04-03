@@ -97,7 +97,9 @@ public:
 
     int top(){
         // assert stackVal is not empty
-        return stackVal.top() + minVal;
+	long val = stackVal.top();
+	if (val < 0)  return minVal;
+        return val + minVal;
     }
 
     int min(){
